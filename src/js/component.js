@@ -742,6 +742,7 @@ let sharingButton = document.getElementById("sharing-btn");
 let sharingIcons = document.getElementById("sharing-icon");
 let grupSharingBtn = document.getElementById("grupsharing");
 
+if(sharingButton){
 sharingButton.onclick = function () {
     sharingButton.setAttribute("hidden", true);
     sharingIcons.removeAttribute("hidden");
@@ -750,6 +751,7 @@ sharingButton.onclick = function () {
 grupSharingBtn.onmouseleave = function () {
     sharingButton.removeAttribute("hidden");
     sharingIcons.setAttribute("hidden", true);
+}
 }
 
 //variables popup windovs
