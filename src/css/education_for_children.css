@@ -1,0 +1,271 @@
+@import url("component.css");
+
+/*screen-width 375 - 767px*/
+
+.education-for-children {
+    width: 375px;
+    padding-top: 31px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-for-children .products-heading {
+    margin: 0;
+}
+
+.education-for-children .products-text-block {
+    position: relative;
+    font-size: 16px;
+    line-height: 119%;
+}
+
+.education-for-children .products-text {
+    position: relative;
+    margin: 0;
+    margin-top: 21px;
+    z-index: 1;
+}
+
+.education-for-children .products-topics-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.education-for-children .products-topics {
+    padding-top: 8px;
+}
+
+.education-for-children .products-image-m {
+    margin-top: 19px;
+    margin-bottom: 21px;
+    width: 295px;
+    height: 220px;
+    background-image: url(../images/education-for-children-image-m.jpg);
+    background-repeat: no-repeat;
+}
+
+.education-for-children .products-image {
+    display: none;
+}
+
+.education-for-children .products-btn {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 19px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-for-children .products-yellow-painting {
+    position: absolute;
+    left: 110px;
+    top: 617px;
+    width: 210px;
+    height: 130px;
+    background-image: url(../images/education-for-children-image-yellow-painting-m.svg);
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* block children gallery start */
+#child-gallery {
+    padding: 0 40px;
+    margin-top: 39px;
+}
+
+#child-gallery>h3 {
+    margin-bottom: 20px;
+}
+
+#child-gallery>a>img {
+    width: 295px;
+    height: 295px;
+    margin-bottom: 20px;
+}
+
+#child-gallery>a>img:hover #child-gallery>a>img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 295px;
+    height: 295px;
+    background-image: linear-gradient(0deg, rgba(71, 168, 36, 0.5), rgba(71, 168, 36, 0.5));
+    pointer-events: none;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(71, 168, 36, 0.5), rgba(71, 168, 36, 0.5)), url(../images/photo_camera.svg) center no-repeat;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.gallery-item:hover::before {
+    opacity: 1;
+}
+
+/* block children gallery end */
+/*screen-width 768 - 1023px*/
+
+@media (min-width: 768px) {
+    .education-for-children {
+        width: 100%;
+    }
+
+    .education-for-children .products-image-m {
+        margin: 0 auto;
+        width: 600px;
+        height: 600px;
+        background-image: url(../images/education-for-children-image-d.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .education-for-children .products-yellow-painting {
+        left: 300px;
+        top: 830px;
+    }
+
+    /* block children gallery start */
+    #child-gallery {
+        padding: 0px 40px;
+        margin-top: 175px;
+        margin-bottom: 70px;
+    }
+
+    #child-gallery>h3 {
+        font-size: 64px;
+        margin-bottom: 55px;
+    }
+
+    #child-gallery>a>img {
+        width: 302px;
+        height: 302px;
+        margin-bottom: 10px;
+        margin-right: 4px;
+    }
+
+    /* block children gallery end */
+}
+
+/*screen-width 1024 - 1439px*/
+
+@media (min-width: 1024px) {
+    .education-for-children {
+        padding-top: 100px;
+    }
+
+    .education-for-children .products-heading {
+        font-size: 64px;
+        line-height: 81px;
+    }
+
+    .education-for-children .products-content {
+        display: flex;
+    }
+
+    .education-for-children .products-text-block {
+        font-size: 18px;
+    }
+
+    .education-for-children .products-text {
+        margin-top: 30px;
+    }
+
+    .education-for-children .products-topics-list {
+        margin-bottom: 0;
+    }
+
+    .education-for-children .products-topics {
+        padding-top: 12px;
+    }
+
+    .education-for-children .products-image-m {
+        display: none;
+    }
+
+    .education-for-children .products-image {
+        display: block;
+        margin-top: 41px;
+        margin-left: 40px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .education-for-children .products-btn {
+        margin-top: 40px;
+        margin-right: 0;
+    }
+
+    .education-for-children .products-yellow-painting {
+        width: 310px;
+        height: 190px;
+        background-image: url(../images/education-for-children-image-yellow-painting-d.svg);
+        background-size: contain;
+        left: 300px;
+        top: 400px;
+    }
+
+    /* gallery  */
+
+    #child-gallery {
+        padding: 0px;
+    }
+}
+
+/*screen-width 1440px + */
+
+@media (min-width: 1440px) {
+    .education-for-children {
+        padding: 0;
+        padding-top: 99px;
+        width: unset;
+    }
+
+    .education-for-children .products-text-block {
+        width: 600px;
+        line-height: 120%;
+        font-size: 20px;
+    }
+
+    .education-for-children .products-text {
+        margin-top: 40px;
+    }
+
+    .education-for-children .products-topics {
+        padding-top: 16px;
+    }
+
+    .education-for-children .products-image {
+        width: 600px;
+        height: 600px;
+    }
+
+    .education-for-children .products-yellow-painting {
+        width: 350px;
+        height: 200px;
+        background-size: unset;
+        left: 50px;
+        top: 478px;
+    }
+}
+
+/*end block education for children*/
